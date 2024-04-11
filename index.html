@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+
+
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">
+            Qiangqiang SHAN
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li> 
+                <li><a href="#projects">Projects</a></li> 
+                <li><a href="#contact">Contact</a></li>  
+
+            </ul>
+        </div>
+
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">
+            Qiangqiang SHAN 
+        </div>
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()" >About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li> 
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li> 
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>  
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="./assets/profilelook1.png" alt="Qiangqiang SHAN profile picture "/>
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello,I'm</p>
+            <h1 class="title">Qiangqiang SHAN</h1>
+            <p class="section_text_p2">Frontend Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+                 Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href('./#contact')">
+                    Contact Info
+                   </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png"
+                    alt="My linkedin profile" 
+                    class="icon" 
+                    onclick="location.href='https://linkdin.com/'"
+                />
+                <img src="./assets/github.png"
+                    alt="My Github profile" 
+                    class="icon" 
+                    onclick="location.href='https://github.com/'"
+                />
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Kown More</p>
+        <h1 class="title"> About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img
+                    src="./assets/about-pic.png"
+                    alt="Profile picture"
+                    class="about-pic"
+                />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src ="./assets/experience.png" alt="experience icon" class="icon"/>
+                        <h3>Experience</h3>
+                        <p>2+ years<br/>Frontend Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src ="./assets/education.png" alt="Education icon" class="icon"/>
+                        <h3>Education</h3>
+                        <p>B.Mechanical. Bachelors Degree<br/>M. Mechanical. Master Degree</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Hello, my name is SHAN Qiangqiang I am a self-taught front-end developer. I primarily focus on 
+                        writing clean, elegant, and efficient code. I am proficient in HTML, CSS, JavaScript, Reactjs, and Vuejs.
+                        I also review existive code and can consult with your on how to improve it. Over the past two 2 years, i have primarily worked for companies that 
+                        specialize in entreprise web applications and phone applications development. 
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'"/>
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development </h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>HTML</h3>
+                                <P>Experienced</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>CSS</h3>
+                                <P>Experienced</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>SASS</h3>
+                                <P>Experienced</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>JavaScipt</h3>
+                                <P>Basic</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>TypeScript</h3>
+                                <P>Basic</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Material UI</h3>
+                                <P>Intermdiate</P>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development </h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>PostgreSQL</h3>
+                                <P>Basci</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Node JS</h3>
+                                <P>Intermdiate</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Express JS</h3>
+                                <P>Intermdiate</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Git</h3>
+                                <P>Intermdiate</P>
+                            </div>
+                        </article>
+                        
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-1.png" 
+                        alt="Progect 1"
+                        class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project One</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 progect-btn" onclick="location.href='https://github.com/'">
+                                Github
+                        </button>
+                        <button class="btn btn-color-2 progect-btn" onclick="location.href='https://github.com/'">
+                                Live More
+                        </button>
+
+
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-2.png" 
+                        alt="Progect 1"
+                        class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Two</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 progect-btn" onclick="location.href='https://github.com/'">
+                                Github
+                        </button>
+                        <button class="btn btn-color-2 progect-btn" onclick="location.href='https://github.com/'">
+                                Live More
+                        </button>
+
+
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-3.png" 
+                        alt="Progect 3"
+                        class="project-img"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Three</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 progect-btn" onclick="location.href='https://github.com/'">
+                                Github
+                        </button>
+                        <button class="btn btn-color-2 progect-btn" onclick="location.href='https://github.com/'">
+                                Live More
+                        </button>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="conttact">
+        <p class="section__text__p1">Contact Me</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class=" contact-info-container">
+                <img src="./assets/email.png" alt="email icon" class="icon contact-icon"/>
+                <p><a href="mailtoshanqiang0503@hotmail.com">shanqiang0503@hotmail.com</a></p>
+            </div>
+            <div class=" contact-info-container">
+                <img src="./assets/linkedin.png" alt="Linkdin icon" class="icon contact-icon"/>
+                <p><a href="https://www.linkedin.com">Linkdin</a></p>
+            </div>
+        
+        </div>
+        
+            
+    </section>
+    <footer>
+        <nav id="desktop-nav">
+            
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li> 
+                    <li><a href="#projects">Projects</a></li> 
+                    <li><a href="#contact">Contact</a></li>  
+    
+                </ul>
+            </div>
+            
+        </nav>
+        <p>Copyright &#169; 2024 Qiangqiang SHAN. All Rights Reserbed</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
